@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "tutorials")
-public class Tutorial {
+public class  Tutorial {
 //    private static final long serialVersionUID = -2343243243242432341L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
