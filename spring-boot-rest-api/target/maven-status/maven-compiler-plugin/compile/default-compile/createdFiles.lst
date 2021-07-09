@@ -1,3 +1,12 @@
-com/example/restservice/Greeting.class
-com/example/restservice/RestServiceApplication.class
-com/example/restservice/GreetingController.class
+com\example\restservice\models\user\User.class
+com\example\restservice\repository\AddressRepository.class
+com\example\restservice\models\tutorial\Tutorial.class
+com\example\restservice\models\user\Address.class
+com\example\restservice\controllers\UserController.class
+com\example\restservice\RestServiceApplication.class
+com\example\restservice\controllers\AddressController.class
+com\example\restservice\repository\UserRepository.class
+com\example\restservice\GreetingController.class
+com\example\restservice\Greeting.class
+com\example\restservice\repository\TutorialRepository.class
+com\example\restservice\controllers\TutorialController.class
