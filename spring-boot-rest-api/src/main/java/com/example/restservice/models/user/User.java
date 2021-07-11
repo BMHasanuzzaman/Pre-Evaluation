@@ -28,8 +28,8 @@ public class User {
     @Column(name = "institution_id")
     private String institution_id;
 
-    @Column(name = "f_name")
-    private String f_name;
+    @Column(name = "fname")
+    private String fname;
 
     @Column(name = "l_name")
     private String l_name;
@@ -55,14 +55,14 @@ public class User {
     public User() {
     }
 
-    public User(String regid, String institution_id, String f_name,
+    public User(String regid, String institution_id, String fname,
                 String l_name, Date date, Date date_of_birth,
                 String gender, String nid, String occupation,
                 String address)
     {
         this.regid = regid;
         this.institution_id = institution_id;
-        this.f_name = f_name;
+        this.fname = fname;
         this.l_name = l_name;
         this.date = date;
         this.date_of_birth = date_of_birth;
@@ -96,12 +96,12 @@ public class User {
         this.institution_id = institution_id;
     }
 
-    public String getF_name() {
-        return f_name;
+    public String getFname() {
+        return fname;
     }
 
-    public void setF_name(String f_name) {
-        this.f_name = f_name;
+    public void setFname(String fname) {
+        this.fname = fname;
     }
 
     public String getL_name() {
@@ -167,7 +167,7 @@ public class User {
                 "id=" + id +
                 ", reg_id='" + regid + '\'' +
                 ", institution_id='" + institution_id + '\'' +
-                ", f_name='" + f_name + '\'' +
+                ", fname='" + fname + '\'' +
                 ", l_name='" + l_name + '\'' +
                 ", date=" + date +
                 ", date_of_birth=" + date_of_birth +

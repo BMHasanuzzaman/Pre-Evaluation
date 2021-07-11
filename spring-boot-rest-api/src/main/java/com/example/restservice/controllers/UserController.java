@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.example.restservice.models.tutorial.Tutorial;
 import com.example.restservice.models.user.User;
 import com.example.restservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,8 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 
-@CrossOrigin
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api")
 public class UserController {
@@ -37,7 +36,7 @@ public class UserController {
         try {
             User _user = userRepository
                     .save(new User(user.getReg_id(), user.getInstitution_id(),
-                            user.getF_name(),user.getL_name(),user.getDate(),
+                            user.getFname(),user.getL_name(),user.getDate(),
                             user.getDate_of_birth(),user.getGender(),
                             user.getNid(),user.getOccupation(),user.getAddress()));
             return new ResponseEntity<>(_user, HttpStatus.CREATED);
@@ -77,6 +76,26 @@ public class UserController {
         }
     }
 
+   @GetMapping("/users/{fname}")
+    public ResponseEntity<List<User>> findByFirstname(@PathVariable("fname") String fname) {
+
+        List<User> users = new ArrayList<User>();
+
+        userRepository.findByFnameContaining(fname).forEach(users ::add);
+
+        System.out.println(fname);
+
+        if (!users.isEmpty()) {
+            return new ResponseEntity<> (users, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+
+
+
+
     @DeleteMapping("/users/{id}")
     public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") long id) {
         try {
@@ -106,7 +125,7 @@ public class UserController {
             User _user = userData.get();
             _user.setReg_id(user.getReg_id());
             _user.setInstitution_id(user.getInstitution_id());
-            _user.setF_name(user.getF_name());
+            _user.setFname(user.getFname());
             _user.setL_name(user.getL_name());
             _user.setDate(user.getDate());
             _user.setDate_of_birth(user.getDate_of_birth());
