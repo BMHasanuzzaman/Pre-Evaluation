@@ -1,0 +1,61 @@
+<div class="row row justify-content-center align-self-center">
+  <div [hidden]="submitted" style="width: 400px;" >
+    <h3>Add User</h3>
+    <form (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="name">Registration Id</label>
+        <input type="text" class="form-control" id="regid" required [(ngModel)]="user.regid" name="regid">
+      </div>
+
+      <div class="form-group">
+        <label for="name">First Name</label>
+        <input type="text" class="form-control" id="fname" required [(ngModel)]="user.fname" name="fname">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Last Name</label>
+        <input type="text" class="form-control" id="fname" required [(ngModel)]="user.fname" name="fname">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Gender</label>
+        <input type="text" class="form-control" id="gender" required [(ngModel)]="user.gender" name="gender">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Date of Birth</label>
+        <input type="text" class="form-control" id="date_of_birth" required [(ngModel)]="user.date_of_birth" name="date_of_birth">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Occupatiom</label>
+        <input type="text" class="form-control" id="occupation" required [(ngModel)]="user.occupation" name="occupation">
+      </div>
+
+      <div class="form-group">
+        <label for="name">NID</label>
+        <input type="text" class="form-control" id="nid" required [(ngModel)]="user.nid" name="nid">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Address</label>
+        <input type="text" class="form-control" id="address" required [(ngModel)]="user.address" name="address">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Institution Id</label>
+        <input type="text" class="form-control" id="institution_id" required [(ngModel)]="user.institution_id" name="institution_id">
+      </div>
+
+
+
+
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+
+  <div [hidden]="!submitted">
+    <h4>You submitted successfully!</h4>
+  </div>
+</div>
