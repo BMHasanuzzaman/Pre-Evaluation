@@ -41,7 +41,7 @@ export class AddUserComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['/users']);
+    this.router.navigate(['/userList']);
   }
 
 }

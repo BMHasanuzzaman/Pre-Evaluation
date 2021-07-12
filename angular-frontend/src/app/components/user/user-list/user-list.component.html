@@ -1,8 +1,8 @@
-<div class="panel panel-primary">
-  <div class="panel-heading">
+<div class="card">
+  <div class="card-title">
     <h2>User List</h2>
   </div>
-  <div class="panel-body">
+  <div class="card-body">
     <table class="table table-striped">
       <thead>
       <tr>
@@ -15,13 +15,14 @@
         <th>Address</th>
         <th>NID</th>
         <th>Institution ID</th>
+        <th>Action</th>
 
 
       </tr>
       </thead>
       <tbody>
       <tr *ngFor="let user of users | async">
-        <td>{{user.regid}}</td>
+        <td>{{user.id}}</td>
         <td>{{user.fname}}</td>
         <td>{{user.l_name}}</td>
         <td>{{user.date_of_birth}}</td>
@@ -31,9 +32,11 @@
         <td>{{user.occupation}}</td>
         <td>{{user.institution_id}}</td>
 
-        <td><button (click)="deleteUser(user.id)" class="btn btn-danger">Delete</button>
+        <td>
+          <div class="btn-group"><button (click)="deleteUser(user.id)" class="btn btn-danger">Delete</button>
           <button (click)="updateUser(user.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
           <button (click)="userDetails(user.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </div>
         </td>
       </tr>
       </tbody>
