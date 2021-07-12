@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cab1afce-3954-46eb-90ce-723be0cedfcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/doctor/add-doctor/add-doctor.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/doctor/add-doctor/add-doctor.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/doctor/add-doctor/add-doctor.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/doctor/add-doctor/add-doctor.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/new-comp/test-component/test-component.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/new-comp/test-component/test-component.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/new-comp/test-component/test-component.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/new-comp/test-component/test-component.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/add-user/add-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/add-user/add-user.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +113,11 @@
       <workItem from="1625901787695" duration="1312000" />
       <workItem from="1625912597134" duration="1606000" />
       <workItem from="1625914781152" duration="4491000" />
-      <workItem from="1626013339678" duration="2606000" />
+      <workItem from="1626013339678" duration="2824000" />
+      <workItem from="1626021494587" duration="1193000" />
+      <workItem from="1626073216664" duration="2227000" />
+      <workItem from="1626103666298" duration="524000" />
+      <workItem from="1626107420688" duration="870000" />
     </task>
     <servers />
   </component>

@@ -76,14 +76,12 @@ public class UserController {
         }
     }
 
-   @GetMapping("/users/{fname}")
-    public ResponseEntity<List<User>> findByFirstname(@PathVariable("fname") String fname) {
+   @GetMapping("/users/name/{fname}")
+    public ResponseEntity<List<User>> findByFname(@PathVariable("fname") String fname) {
 
         List<User> users = new ArrayList<User>();
 
         userRepository.findByFnameContaining(fname).forEach(users ::add);
-
-        System.out.println(fname);
 
         if (!users.isEmpty()) {
             return new ResponseEntity<> (users, HttpStatus.OK);
@@ -91,9 +89,6 @@ public class UserController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-
-
-
 
 
     @DeleteMapping("/users/{id}")
