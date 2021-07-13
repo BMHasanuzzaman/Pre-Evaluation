@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cab1afce-3954-46eb-90ce-723be0cedfcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/add-user/add-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/add-user/add-user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/add-user/add-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/add-user/add-user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/user-details/user-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/user-details/user-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/user-details/user-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/app/components/user/user-details/user-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../angular-frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../angular-frontend/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +124,9 @@
       <workItem from="1626021494587" duration="1193000" />
       <workItem from="1626073216664" duration="2227000" />
       <workItem from="1626103666298" duration="524000" />
-      <workItem from="1626107420688" duration="870000" />
+      <workItem from="1626107420688" duration="1652000" />
+      <workItem from="1626122551121" duration="372000" />
+      <workItem from="1626163195042" duration="761000" />
     </task>
     <servers />
   </component>

@@ -36,11 +36,11 @@ export class UserListComponent implements OnInit {
   }
 
   userDetails(id: string){
-    this.router.navigate(['userDetails']);
+    this.router.navigate(['userDetails',id]);
   }
 
 
   updateUser(id: string){
-    this.router.navigate(['updateUser']);
+    this.router.navigate(['updateUser',id]);
   }
 }

@@ -194,7 +194,7 @@
   }
 
   .terminal pre {
-    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
     color: white;
     padding: 0 1rem 1rem;
     margin: 0;
@@ -238,17 +238,17 @@
     align-items: center;
     font-size: 12px;
     padding: 3px 10px;
-    border: 1px solid rgba(27, 31, 35, .2);
+    border: 1px solid rgba(27,31,35,.2);
     border-radius: 3px;
-    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
     margin-left: 4px;
     font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
   }
 
   .github-star-badge:hover {
-    background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
-    border-color: rgba(27, 31, 35, .35);
+    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+    border-color: rgba(27,31,35,.35);
     background-position: -.5em;
   }
 
@@ -270,7 +270,7 @@
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
 
-    .card-container > *:not(.circle-link),
+    .card-container > *:not(.circle-link) ,
     .terminal {
       width: 100%;
     }
@@ -296,66 +296,20 @@
       visibility: hidden;
     }
   }
-
-  body {
-    font-family: "Lato", sans-serif;
-  }
-
-  .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-
-  .sidenav a {
-    padding: 6px 6px 6px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-
-  .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-  }
-
-  @media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-
-    .sidenav a {
-      font-size: 18px;
-    }
-  }
 </style>
 
 <!-- Toolbar -->
-<div class="sidenav">
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-<!--    <div class="navbar-nav mr-auto">-->
-
-<!--&lt;!&ndash;      <li class="nav-item">&ndash;&gt;-->
-<!--&lt;!&ndash;        <a routerLink="tutorials" class="nav-link">Tutorials</a>&ndash;&gt;-->
-<!--&lt;!&ndash;      </li>&ndash;&gt;-->
-<!--&lt;!&ndash;      <li class="nav-item">&ndash;&gt;-->
-<!--&lt;!&ndash;        <a routerLink="create" class="nav-link">Add</a>&ndash;&gt;-->
-<!--&lt;!&ndash;      </li>&ndash;&gt;-->
-<!--      &lt;!&ndash;<li class="nav-item dropdown">-->
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="/" class="navbar-brand">Pre Evaluation</a>
+    <div class="navbar-nav mr-auto">
+      <!--      <li class="nav-item">-->
+      <!--        <a routerLink="tutorials" class="nav-link">Tutorials</a>-->
+      <!--      </li>-->
+      <!--      <li class="nav-item">-->
+      <!--        <a routerLink="create" class="nav-link">Add</a>-->
+      <!--      </li>-->
+<!--      <li class="nav-item dropdown">-->
 <!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
 <!--          Tutorials-->
 <!--        </a>-->
@@ -363,23 +317,25 @@
 <!--          <a routerLink="tutorials" class="dropdown-item">Tutorials List</a>-->
 <!--          <a routerLink="create" class="dropdown-item">Add Tutorial</a>-->
 <!--        </div>-->
-<!--      </li>&ndash;&gt;-->
-<!--      <li class="nav-item dropdown">-->
-<!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--          Users-->
-<!--        </a>-->
-<!--        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--          <a routerLink="createUser" class="dropdown-item">Create User</a>-->
-<!--          <a routerLink="userList" class="dropdown-item"> User List</a>-->
-<!--        </div>-->
 <!--      </li>-->
-<!--    </div>-->
-<!--  </nav>-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Users
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a routerLink="createUser" class="dropdown-item">Add User</a>
+          <a routerLink="userList" class="dropdown-item">User List</a>
+        </div>
+      </li>
+    </div>
+  </nav>
 
-<!--  <div class="container mt-3">-->
-<!--    <router-outlet></router-outlet>-->
-<!--  </div>-->
-<!--</div>-->
+  <!--  <div class="container mt-3">-->
+  <!--    <router-outlet></router-outlet>-->
+  <!--  </div>-->
+</div>
+
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -388,6 +344,6 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * *  -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<div class  = "main">
-  <router-outlet></router-outlet>
-</div>
+
+
+<router-outlet></router-outlet>

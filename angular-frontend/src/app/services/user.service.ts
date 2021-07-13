@@ -16,7 +16,7 @@ export class UserService {
     return this.http.get(baseUrl);
   }
 
-  get(id: string): Observable<any> {
+  get(id: bigint): Observable<any> {
     return this.http.get(`${baseUrl}/${id}`);
   }
 
@@ -24,7 +24,7 @@ export class UserService {
     return this.http.post(baseUrl, data);
   }
 
-  update(id: string, data: object): Observable<object> {
+  update(id: bigint, data: object): Observable<object> {
     return this.http.put(`${baseUrl}/${id}`, data);
   }
 

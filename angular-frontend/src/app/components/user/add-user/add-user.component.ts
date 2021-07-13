@@ -19,7 +19,7 @@ export class AddUserComponent implements OnInit {
   ngOnInit() {
   }
 
-  newTutorial(): void {
+  newUser(): void {
     this.submitted = false;
     this.user = new User();
   }

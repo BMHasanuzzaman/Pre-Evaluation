@@ -14,6 +14,10 @@ import { AddUserComponent } from './components/user/add-user/add-user.component'
 import { UpdateUserComponent } from './components/user/update-user/update-user.component';
 import { UserDetailsComponent } from './components/user/user-details/user-details.component';
 import { UserListComponent } from './components/user/user-list/user-list.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +36,8 @@ import { UserListComponent } from './components/user/user-list/user-list.compone
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        FormsModule,
+      BrowserAnimationsModule,
+      FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

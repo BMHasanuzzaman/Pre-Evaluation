@@ -1,1 +1,20 @@
-<p>user-details works!</p>
+<div class="row row justify-content-center align-self-center">
+  <div style="width: 400px;" *ngIf="user">
+    <h2>User Details</h2>
+    <div>
+      <label><b>First Name: </b></label> {{user.fname}}
+    </div>
+    <div>
+      <label><b>Last Name: </b></label> {{user.l_name}}
+    </div>
+    <div>
+      <label><b>Date of Birth: </b></label> {{user.date_of_birth}}
+    </div>
+
+
+    <br>
+    <br>
+    <button (click)="updateUser()" class="btn btn-info">Update</button> <span></span>
+    <button (click)="list()" class="btn btn-primary">Back to User List</button><br>
+  </div>
+</div>

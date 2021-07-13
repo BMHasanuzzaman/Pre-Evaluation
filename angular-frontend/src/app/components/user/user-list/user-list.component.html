@@ -6,16 +6,12 @@
     <table class="table table-striped">
       <thead>
       <tr>
-        <th>Registration Id</th>
+        <th>ID</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Date of Birth</th>
         <th>Gender</th>
         <th>Occupation</th>
-        <th>Address</th>
-        <th>NID</th>
-        <th>Institution ID</th>
-        <th>Action</th>
 
 
       </tr>
@@ -27,10 +23,7 @@
         <td>{{user.l_name}}</td>
         <td>{{user.date_of_birth}}</td>
         <td>{{user.gender}}</td>
-        <td>{{user.nid}}</td>
-        <td>{{user.address}}</td>
         <td>{{user.occupation}}</td>
-        <td>{{user.institution_id}}</td>
 
         <td>
           <div class="btn-group"><button (click)="deleteUser(user.id)" class="btn btn-danger">Delete</button>
